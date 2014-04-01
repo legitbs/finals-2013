@@ -1,0 +1,11 @@
+require 'fileutils'
+
+task default: ['index.html', 'index.css']
+
+file 'index.html' => 'index.html.haml' do |t|
+  sh "haml #{t.prerequisites.join} #{t.name}"
+end
+
+file 'index.css' => 'index.css.sass' do |t|
+  sh "sass #{t.prerequisites.join} #{t.name}"
+end

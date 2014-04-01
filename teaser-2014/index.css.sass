@@ -1,0 +1,37 @@
+@import url(http://fonts.googleapis.com/css?family=Exo:100,300)
+body
+  background: black url('rio-2014.jpeg') top center no-repeat
+  color: white
+  font-family: Exo, "Helvetica Neue", sans-serif
+  padding: 0
+a
+  &:link, &:visited, &:hover
+    color: black
+$backgroundHeight: 1800px
+$footerHeight: 40px
+br.clear
+  clear: both
+.container
+  width: 100%
+  height: $backgroundHeight - $footerHeight
+  margin: 0
+  padding: 0
+  h1
+    padding-top: 200px
+    font-weight: 100
+    font-size: 120px
+    text-align: center
+.footer
+  margin: 0
+  padding: 0
+  background: rgba(255, 255, 255, 0.8)
+  color: black
+  p
+    font-weight: 300
+    font-size: 30px
+    padding: 20px
+    margin: 0
+    &.lefty
+      float: left
+    &.righty
+      float: right
